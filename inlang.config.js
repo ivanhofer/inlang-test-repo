@@ -9,7 +9,7 @@ export async function initializeConfig(env) {
   return {
     referenceLanguage: "en",
     languages: ["en", "de"],
-    readResources: async (args) => plugin.readResources({ ...args, ...env, pluginConfig }),
-    writeResources: (args) => plugin.writeResources({ ...args, ...env, pluginConfig }),
+    readResources: async (args) => plugin.readResources({ ...args, ...env }),
+    writeResources: (args) => plugin.writeResources({ ...args, ...env }),
   }
 }
