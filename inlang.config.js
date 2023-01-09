@@ -7,7 +7,7 @@ export async function initializeConfig(env) {
     languages: ["en", "de"],
     readResources: async (args) => {
       console.log('read', args);
-      const x = await loadLocale(args.config.referenceLanguage)
+      const x = await loadLocale(env.$import, args.config.referenceLanguage)
       console.log(x);
       return []
     },
@@ -19,7 +19,7 @@ export async function initializeConfig(env) {
 
 // --------------------------------------------------------------------------------------------------------------------
 
-const loadLocale = async (locale) => {
-  const module = await import(/* vite-ignore */`./src/i18n/${locale}/index.ts`);
+const loadLocale = async ($import, locale) => {
+  const module = await $import(/* vite-ignore */`./src/i18n/${locale}/index.ts`);
   return module.default
 }
