@@ -20,7 +20,7 @@ export async function initializeConfig(env) {
 // --------------------------------------------------------------------------------------------------------------------
 
 const loadLocale = async ($import, locale) => {
-  const esbuild = await $import('https://cdn.jsdelivr.net/npm/esbuild@0.16.16/lib/main.js')
+  const esbuild = await $import('https://cdn.skypack.dev/-/esbuild@v0.16.16-QlnhVgB2NGGPL1heU74X/dist=es2019,mode=imports/optimized/esbuild.js')
   console.log(111, esbuild);
   const x = await esbuild.build({ entryPoints: [`./src/i18n/${locale}/index.ts`], outfile: './out.js' })
   console.log(1, x);
