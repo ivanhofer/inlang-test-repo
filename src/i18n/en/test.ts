@@ -1,1 +1,0 @@
-export const aa = 'hello from the other file!'
