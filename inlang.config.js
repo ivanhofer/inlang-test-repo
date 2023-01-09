@@ -1,5 +1,3 @@
-import { build } from 'esbuild'
-
 /**
  * @type {import("@inlang/core/config").InitializeConfig}
  */
@@ -22,7 +20,9 @@ export async function initializeConfig(env) {
 // --------------------------------------------------------------------------------------------------------------------
 
 const loadLocale = async ($import, locale) => {
-  const x = await build({ entryPoints: [`./src/i18n/${locale}/index.ts`], outfile: './out.js' })
+  const esbuild = await $import('esbuild')
+  console.log(111, esbuild);
+  const x = await esbuild.build({ entryPoints: [`./src/i18n/${locale}/index.ts`], outfile: './out.js' })
   console.log(1, x);
   const module = await $import(/* vite-ignore */ `./out.js`);
   console.log(11, module);
