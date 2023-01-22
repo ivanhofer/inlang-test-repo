@@ -9,7 +9,7 @@ export async function defineConfig(env) {
 
   // initialize the plugin
   const plugin = await env.$import(
-    "https://cdn.jsdelivr.net/gh/ivanhofer/inlang-plugin-typesafe-i18n/dist/index.js"
+    "https://raw.githubusercontent.com/ivanhofer/inlang-plugin-typesafe-i18n/main/dist/index.js"
   )
 
   // get the locale information from `typesafe-i18n`
