@@ -11,6 +11,7 @@
 		"typesafe-i18n": "typesafe-i18n"
 	},
 	"devDependencies": {
+		"@inlang/core": "^0.3.0",
 		"@sveltejs/adapter-auto": "^1.0.2",
 		"@sveltejs/kit": "^1.2.2",
 		"esbuild": "^0.17.4",

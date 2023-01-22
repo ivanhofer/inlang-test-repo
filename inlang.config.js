@@ -1,5 +1,7 @@
+import { getLocaleInformation } from "typesafe-i18n/config"
+
 /**
- * @type {import("@inlang/core/config").InitializeConfig}
+ * @type {import("@inlang/core/config").DefineConfig}
  */
 export async function defineConfig(env) {
   // initialize the plugin

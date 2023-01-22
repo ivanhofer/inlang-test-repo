@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@inlang/core': ^0.3.0
   '@sveltejs/adapter-auto': ^1.0.2
   '@sveltejs/kit': ^1.2.2
   esbuild: ^0.17.4
@@ -15,6 +16,7 @@ dependencies:
   typesafe-i18n: 5.20.0_typescript@4.9.4
 
 devDependencies:
+  '@inlang/core': 0.3.0
   '@sveltejs/adapter-auto': 1.0.2_@sveltejs+kit@1.2.2
   '@sveltejs/kit': 1.2.2_svelte@3.55.1+vite@4.0.4
   esbuild: 0.17.4
@@ -421,6 +423,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@inlang/core/0.3.0:
+    resolution: {integrity: sha512-SD4pSSL7hxdOJIeZlCgSZC0BlRB3XneeHyNzziSkrCY1ONMXpyvRUIXqVpo5xA/NuSBIydGRejsYW71sPaGkyg==}
+    dev: true
 
   /@jridgewell/resolve-uri/3.1.0:
     resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
